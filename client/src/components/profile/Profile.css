@@ -1,0 +1,28 @@
+.profile{
+    margin: 30px 20px 0 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.profileUserInfo{
+    text-align: center;
+}
+.profileUserName{
+    font-size: 30px;
+    color: #885833;
+    font-weight: 500;
+}
+.profileUserEmail{
+    font-size: 20px;
+}
+.profilePosts{
+    margin-top: 20px;
+}
+.postArea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.yourPosts{
+    margin-left: 30px;
+    font-size: 20px;
+}

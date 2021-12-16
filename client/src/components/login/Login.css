@@ -1,0 +1,55 @@
+.login{
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:url('https://i0.wp.com/awaywithwords.co/wp-content/uploads/2017/02/pineapples-142104-unsplash-1024x683.jpg?resize=1024%2C683'), no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+.loginTitle{
+    font-size: 50px;
+    font-weight: 500;
+}
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.loginFormLabel{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.loginInput{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.loginButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.loginRegisterButton{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    cursor: pointer;
+    background-color: rgb(0, 211, 211);
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.header{
+    margin-top: 15px;
+}
+.headerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.headerBig{
+    position: absolute;
+    top: 5%;
+    font-size: 120px;
+    color: black;
+    font-weight: 600;
+    color: #885833;
+}
+.headerImage{
+    width:100%;
+    margin-top: 50px;
+}
