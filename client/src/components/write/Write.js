@@ -11,6 +11,7 @@ const Write=()=>{
     const {user}=useContext(Context)
 
     const handleSubmit=async (e)=>{
+        console.log("inside dubmit");
         e.preventDefault();
         const newPost={
             username:user.username,
@@ -29,11 +30,10 @@ const Write=()=>{
             catch(err){
                 console.log("error");
             }
+            
         }
         try{
             const res=await axios.post("/post",newPost);
-            console.log(res);
-            console.log("ok");
             window.location.replace("/post/"+res.data._id);
         }
         catch(err){

@@ -10,6 +10,7 @@ const Single_post=()=>{
     const location=useLocation();
     const path=location.pathname.split("/")[2];
     const [post,setPost]=useState({});
+    const [file,setFile]=useState(null);
     const PF="http://localhost:5000/images/";
     const{user}=useContext(Context);
     const [title,setTitle]=useState("");
@@ -27,17 +28,34 @@ const Single_post=()=>{
     }
 
     const handlePostUpdate=async()=>{
-        try{
-            const res=await axios.put(`/post/${post._id}`,{
+            const newPost={
                 username:user.username,
                 title:title,
                 description:description,
-            })
+            };
+            if(file){
+                const data=new FormData();
+                const filename=Date.now()+file.name;
+                data.append('name',filename)
+                data.append('file',file);
+                newPost.photo=filename;
+                console.log(data)
+                try{
+                    await axios.post("/upload",data);
+                }
+                catch(err){
+                    console.log("error");
+                }     
+                console.log(newPost);         
+            }
+            try{
+                const res=await axios.put(`/post/${post._id}`,newPost);
+                window.location.replace("/post/"+res.data._id);
+            }
+            catch(err){
+                console.log("error");
+            }
             setUpdate(false);
-        }
-        catch(err){
-            console.log(err);
-        }
     }
     
     useEffect(()=>{
@@ -56,14 +74,19 @@ const Single_post=()=>{
                 <div className="writeForm">
                 <div className="writeHeading">Update you Story..</div>
                     <div className="imageContainer">
-                        <img src={PF+post.photo} className="writeImg" alt="blogimage"/>
+                    {file ? (
+                        <img className="writeImg" alt="blogimage"
+                        src={URL.createObjectURL(file)}/>
+                    ):(
+                        <img src={PF+post.photo} className="singlePostImg" alt="blogImage"/>
+                    )}
                     </div>
                     <div className="writeFormGroup">
                         <div className="addImg">
                             <label htmlFor="fileInput">
                             <i className="addIcon fas fa-plus-circle"></i>    
                             </label>
-                            <input type="file" id="fileInput" style={{display:"none"}}/>
+                            <input type="file" id="fileInput" style={{display:"none"}} onChange={e=>setFile(e.target.files[0])}/>
                             <textarea type="text" placeholder="Title" rows="1" className="writeInput writeText" value={title} onChange={e=>setTitle(e.target.value)}></textarea>  
                         </div>
                         <textarea placeholder="Tell your story" type="text" className="writeInput writeText" rows="6" value={description} onChange={e=>setDescritpion(e.target.value)}></textarea>

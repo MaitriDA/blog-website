@@ -3,8 +3,11 @@ import axios from 'axios';
 import './Profile.css';
 import Post from '../post/Post';
 import {useLocation} from 'react-router';
+import {Context} from '../../context/Context';
+import { useContext } from "react";
 
 const Profile=()=>{
+    const { user } = useContext(Context);
     const [posts,setPosts]=useState([]);
     const {search}=useLocation();
     useEffect(()=>{
@@ -18,8 +21,8 @@ const Profile=()=>{
     return(
         <div className="profile">
             <div className="profileUserInfo">
-                <div className="profileUserName">Hello, Name !!</div>
-                <div className="profileUserEmail">Email</div>
+                <div className="profileUserName">Hello, {user.username} !!</div>
+                <div className="profileUserEmail">{user.email}</div>
             </div>
             <div className="profilePosts">
             <div className="yourPosts">Your Posts,</div>
