@@ -66,16 +66,7 @@ const Write=()=>{
                         
                     </div>
                     <div className="writeFormGroup">
-                    <form className="category"> 
-                        {cat.map(c=>(
-                            
-                            <div className="individualCat">
-                                <input type="checkbox" value={c.name} onClick={handleCategory} className="checkBox"/>
-                                <label>{c.name}</label>
-
-                            </div>
-                        ))}    
-                        </form>  
+                    
                         <div className="addImg">
                             <label htmlFor="fileInput">
                             <i className="addIcon fas fa-plus-circle"></i>    
@@ -85,6 +76,16 @@ const Write=()=>{
                         </div>
                         
                         <textarea placeholder="Tell your story" type="text" className="writeInput writeText" rows="6" onChange={e=>setDescription(e.target.value)}></textarea>
+                        <form className="category"> 
+                        {cat.map(c=>(
+                            
+                            <div className="individualCat">
+                                <input type="checkbox" value={c.name} onClick={handleCategory} className="checkBox"/>
+                                <label>{c.name}</label>
+
+                            </div>
+                        ))}    
+                        </form>  
                     </div>
 
                     <button className="writeSubmit" type="submit">Publish</button>

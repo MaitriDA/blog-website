@@ -5,6 +5,7 @@ const authRoute=require('./routes/auth.js');
 const userRoute=require('./routes/users.js');
 const postRoute=require('./routes/posts.js')
 const categoryRoute=require('./routes/category.js');
+const contactUsRoute=require('./routes/contactus.js');
 const multer=require('multer');
 const path=require('path');
 
@@ -45,5 +46,6 @@ app.use('/server/auth',authRoute)
 app.use('/server/user',userRoute)
 app.use('/server/post',postRoute)
 app.use('/server/category',categoryRoute)
+app.use('/server/contactus',contactUsRoute)
 
 app.use("/",(req,res)=>{})

@@ -4,6 +4,8 @@ import Topbar from "./components/topbar/Topbar";
 import Write from "./components/write/Write";
 import Login from './components/login/Login';
 import Register from "./components/register/Register";
+import AboutUs from "./components/aboutus/Aboutus.js";
+import ContactUs from "./components/contactus/ContactUs.js";
 import Profile from "./components/profile/Profile";
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { useContext } from "react";
@@ -19,6 +21,8 @@ function App() {
         <Route exact path="/"><Home/></Route>
         <Route exact path="/login">{user ? <Home/>:<Login/>}</Route>
         <Route exact path="/register">{user ? <Home/>:<Register/>}</Route>
+        <Route exact path="/aboutus"><AboutUs/></Route>
+        <Route exact path="/contactus"><ContactUs/></Route>
         <Route exact path="/write">{user ? <Write/>:<Register/>}</Route>
         <Route exact path="/post/:id"><Single_post/></Route>
         <Route exact path="/profile"><Profile/></Route>

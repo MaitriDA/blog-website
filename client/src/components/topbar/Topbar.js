@@ -18,7 +18,7 @@ const Topbar=()=>{
                     <li className="topListItem"><Link to="/" style={{textDecoration:"none",color:"inherit"}}>
                     HOME
                     </Link></li>
-                    <li className="topListItem"><Link to="/contactus" style={{textDecoration:"none",color:"inherit"}}>
+                    <li className="topListItem"><Link to="/aboutus" style={{textDecoration:"none",color:"inherit"}}>
                     ABOUT US
                     </Link></li>
                     <li className="topListItem"><Link to="/contactus" style={{textDecoration:"none",color:"inherit"}}>
@@ -38,8 +38,6 @@ const Topbar=()=>{
                 <Link  to="/profile">
                 <i className="imgIcon far fa-user-circle"></i>
                 </Link>
-                
-                <i className="searchIcon fas fa-search"></i>
             </div>):(<div className="loginReg">
             <ul className="topList">
 

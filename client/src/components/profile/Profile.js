@@ -12,7 +12,8 @@ const Profile=()=>{
     const {search}=useLocation();
     useEffect(()=>{
         const fetchPosts=async()=>{
-            const res=await axios.get(`/post/?user=${"demo"}`)
+            console.log(user);
+            const res=await axios.get(`/post/?user=${user.username}`)
             setPosts(res.data);
         }
         console.log(search)
