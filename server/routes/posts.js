@@ -1,6 +1,6 @@
 const router=require("express").Router();
 const Post=require("../model/Post.js");
-
+const fs=require('fs');
 
 //Create new post
 router.post("/",async(req,res)=>{
@@ -46,7 +46,16 @@ router.delete("/:id",async(req,res)=>{
         const post=await Post.findById(req.params.id);
         if(post.username===req.body.username){
             try{
+                const photo=post.photo;
+                //const path=`../images/${photo}`;
+                const path=`../images/1639217493398None.png`;
                 await post.delete();
+                if(photo){
+                fs.unlink(`images/${photo}`, function (err) {
+                    if (err) throw err;
+                    console.log('File deleted!');
+                  });
+                }
                 res.status(200).json("Post deleted");
             }
             catch(err){

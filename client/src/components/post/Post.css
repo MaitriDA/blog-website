@@ -18,9 +18,11 @@
 .postCats{
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
 }
 .postCat{
-    color: brown;
+    font-style: italic;
+    font-weight: 500;
     line-height: 20px;
     margin-top: 15px;
     margin-left: 10px;

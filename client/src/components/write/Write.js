@@ -1,4 +1,4 @@
-import React,{useState,useContext} from 'react';
+import React,{useState,useContext,useEffect} from 'react';
 import './Write.css';
 import axios from 'axios';
 import {Context} from '../../context/Context.js'
@@ -8,6 +8,8 @@ const Write=()=>{
     const [title,setTitle]=useState("");
     const [description,setDescription]=useState("");
     const [file,setFile]=useState(null);
+    const [category,setCategory]=useState([]);
+    const [cat,setCat]=useState([]);
     const {user}=useContext(Context)
 
     const handleSubmit=async (e)=>{
@@ -17,6 +19,7 @@ const Write=()=>{
             username:user.username,
             title:title,
             description:description,
+            category:category
         };
         if(file){
             const data=new FormData();
@@ -30,7 +33,6 @@ const Write=()=>{
             catch(err){
                 console.log("error");
             }
-            
         }
         try{
             const res=await axios.post("/post",newPost);
@@ -39,9 +41,19 @@ const Write=()=>{
         catch(err){
             console.log("error")
         }
-        
     }
-    return(
+    const handleCategory=(e)=>{
+        setCategory([...category,e.target.value]);
+    }
+
+    useEffect(()=>{
+        const getCats=async()=>{
+            const res=await axios.get('/category');
+            setCat(res.data);
+        }
+        getCats();
+    })
+        return(
         <>
             <div className="write">
                 <form className="writeForm" onSubmit={handleSubmit}>
@@ -54,6 +66,16 @@ const Write=()=>{
                         
                     </div>
                     <div className="writeFormGroup">
+                    <form className="category"> 
+                        {cat.map(c=>(
+                            
+                            <div className="individualCat">
+                                <input type="checkbox" value={c.name} onClick={handleCategory} className="checkBox"/>
+                                <label>{c.name}</label>
+
+                            </div>
+                        ))}    
+                        </form>  
                         <div className="addImg">
                             <label htmlFor="fileInput">
                             <i className="addIcon fas fa-plus-circle"></i>    
@@ -61,6 +83,7 @@ const Write=()=>{
                             <input type="file" id="fileInput" style={{display:"none"}} onChange={e=>setFile(e.target.files[0])}/>
                             <input type="text" placeholder="Title" className="writeInput" onChange={e=>setTitle(e.target.value)}/>  
                         </div>
+                        
                         <textarea placeholder="Tell your story" type="text" className="writeInput writeText" rows="6" onChange={e=>setDescription(e.target.value)}></textarea>
                     </div>
 

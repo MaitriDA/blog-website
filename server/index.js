@@ -46,6 +46,4 @@ app.use('/server/user',userRoute)
 app.use('/server/post',postRoute)
 app.use('/server/category',categoryRoute)
 
-app.use("/",(req,res)=>{
-    console.log("Hey!! This is main URL");
-})
+app.use("/",(req,res)=>{})

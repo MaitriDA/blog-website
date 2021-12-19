@@ -46,3 +46,15 @@
     text-decoration: none;
     color: brown;
 }
+.categorySinglePost{
+    color: brown;
+    font-weight: 600;
+    font-style: italic;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.singlePostCategory{
+    margin-left: 10px;
+    margin-right: 10px;
+}

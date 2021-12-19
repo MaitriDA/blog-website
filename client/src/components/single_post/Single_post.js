@@ -14,6 +14,7 @@ const Single_post=()=>{
     const PF="http://localhost:5000/images/";
     const{user}=useContext(Context);
     const [title,setTitle]=useState("");
+    const [cat,setCat]=useState([]);
     const [description,setDescritpion]=useState("");
     const [update,setUpdate]=useState(false);
 
@@ -64,6 +65,7 @@ const Single_post=()=>{
             setPost(res.data);
             setTitle(res.data.title);
             setDescritpion(res.data.description);
+            setCat(res.data.category);
         }
         getPost();
     },[path])
@@ -99,6 +101,11 @@ const Single_post=()=>{
                 {post.photo && (
                     <img src={PF+post.photo} className="singlePostImg" alt="blogImage"/>
                 )}
+                        <div className="categorySinglePost">
+                        {cat.map(c=>(
+                            <div className='singlePostCategory'>{c}</div>
+                        ))}   
+                        </div>
                         <div className="singlePostTop">
                             <div className="singlePostTitle">{post.title}</div>
                             {post.username===user?.username && (
