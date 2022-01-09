@@ -12,8 +12,10 @@ const path=require('path');
 const app=express();
 dotenv.config();
 
-app.listen("5000",()=>{
-    console.log("Server running on port 5000");
+const PORT=process.env.PORT || 5000;
+
+app.listen(PORT,()=>{
+    console.log("Server running");
 })
 
 app.use(express.json())
@@ -36,6 +38,7 @@ const storage=multer.diskStorage({
         cb(null,req.body.name);
     }
 });
+
 
 const upload=multer({storage:storage});
 app.post('/server/upload',upload.single("file"),(req,res)=>{
