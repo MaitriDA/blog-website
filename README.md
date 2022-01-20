@@ -24,24 +24,24 @@ https://github.com/MaitriDA/blog-website
 ![image](https://drive.google.com/uc?export=view&id=16YO-wj4mQqpH_TnrCVVfxmbkN2q-iJ0_)
 
 2) Register Page
-![Register](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/register.PNG?token=GHSAT0AAAAAABQDKPNQK4GGADNZHKB7VEKAYPJG4JQ)
+![image](https://drive.google.com/uc?export=view&id=1RpfEJa36SRSAXBA_HZBgVSHzBambu60o)
 
 3) Home Page
-![Home](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/home.PNG?token=GHSAT0AAAAAABQDKPNQVCSMYUENSRK2DFXMYPJG5UQ)
-![Home1](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/home1.PNG?token=GHSAT0AAAAAABQDKPNR3ANNAYW5WXK67YTGYPJG6IA)
+![image](https://drive.google.com/uc?export=view&id=11zZQT05yzBR5LCczeprM7Je1e75BNJwx)
+![image](https://drive.google.com/uc?export=view&id=1rGmogqS11n65zciWH3d-fvupZz6tkHqI)
 
 4) Filter by category
-[!category](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/cat.PNG?token=GHSAT0AAAAAABQDKPNR57V24URSZTQMIFMKYPJG7HQ)
-[!category1](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/cat2.PNG?token=GHSAT0AAAAAABQDKPNQR56IR5AXKH2VTBT6YPJHAGA)
+![image](https://drive.google.com/uc?export=view&id=17pRYvqak6DZTVMNQCZbDKUKcJJdnimf7)
+![image](https://drive.google.com/uc?export=view&id=1zCFz-WASfs2lwG2yu5xD_-6HG-_iQY2J)
 
 5) Filter acc. to user
-[!user](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/filter%20by%20user.PNG?token=GHSAT0AAAAAABQDKPNR55MXZNP27YNOHC7KYPJHA6A)
+![image](https://drive.google.com/uc?export=view&id=1u8LF2xjScKMyoiLV1Gwi1N6Ohg2tFyYY)
 
 6) Detailed Blog
-[!detail](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/single%20post.PNG?token=GHSAT0AAAAAABQDKPNR2RFSNROJPDUQ7II6YPJHCGQ)
+![image](https://drive.google.com/uc?export=view&id=189S_uEhmMfq7IMtOp5QBHEDajFu7KkMo)
 
 7) Write Blog
-[!write](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/write.PNG?token=GHSAT0AAAAAABQDKPNQPWW34IBO57RYP2WEYPJHCZA)
+![image](https://drive.google.com/uc?export=view&id=1rcK17E5hGr9jzHnAN0JCi8BmEW0z1Tlp)
 
 8) Profile
-[!profile](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/profile.PNG?token=GHSAT0AAAAAABQDKPNRMPKWZSUZ7RLFMU4UYPJHDOA)
+![image](https://drive.google.com/uc?export=view&id=1qUt_6uNL23ck57ir3m_CNMINzUC9QLmx)
