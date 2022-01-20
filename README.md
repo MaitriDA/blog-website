@@ -18,10 +18,15 @@ A MERN stack blog website with clean UI to share your thoughts.
 ## Github Repositories
 https://github.com/MaitriDA/blog-website
 
-### Web Application
+### Screen Shots
 <p align="center">
-  <img alt="Login/Signup" src="https://drive.google.com/uc?export=view&id=16YO-wj4mQqpH_TnrCVVfxmbkN2q-iJ0_" width="80%">
+  <div>
+    <img alt="Login/Signup" src="https://drive.google.com/uc?export=view&id=16YO-wj4mQqpH_TnrCVVfxmbkN2q-iJ0_" width="80%">
 &nbsp; &nbsp; &nbsp; &nbsp;
+    <img alt="Login/Signup" src="https://drive.google.com/uc?export=view&id=1RpfEJa36SRSAXBA_HZBgVSHzBambu60o" width="80%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  </div>
+  
   <img alt="ChatScreen" src="https://drive.google.com/uc?export=view&id=1PbKV8HxK_GeRyaI6J9cij3zjGOKM9eDS" width="80%">
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="ProfileScreen" src="https://drive.google.com/uc?export=view&id=1lDie6zhjrjtuITRrXX-20HHYvD6JAMzX" width="80%">
