@@ -20,7 +20,7 @@ https://github.com/MaitriDA/blog-website
 
 ### Web Application
 <p align="center">
-  <img alt="Login/Signup" src="https://drive.google.com/uc?export=view&id=12ruXF2w9UDkVD_NrlZ-a7_a0OONeu5Cl" width="80%">
+  <img alt="Login/Signup" src="https://drive.google.com/uc?export=view&id=16YO-wj4mQqpH_TnrCVVfxmbkN2q-iJ0_" width="80%">
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="ChatScreen" src="https://drive.google.com/uc?export=view&id=1PbKV8HxK_GeRyaI6J9cij3zjGOKM9eDS" width="80%">
 &nbsp; &nbsp; &nbsp; &nbsp;
