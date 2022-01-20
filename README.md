@@ -21,7 +21,7 @@ https://github.com/MaitriDA/blog-website
 ## Screenshots
 
 1) Login Page
-![Login](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/login.PNG?token=GHSAT0AAAAAABQDKPNQYKFAEREUNKYSAIZ4YPJGZXQ)
+![image](https://drive.google.com/uc?export=view&id=16YO-wj4mQqpH_TnrCVVfxmbkN2q-iJ0_)
 
 2) Register Page
 ![Register](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/register.PNG?token=GHSAT0AAAAAABQDKPNQK4GGADNZHKB7VEKAYPJG4JQ)
