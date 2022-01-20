@@ -18,3 +18,8 @@ A MERN stack blog website with clean UI to share your thoughts.
 ## Github Repositories
 https://github.com/MaitriDA/blog-website
 
+## Screenshots
+
+1) Login Page
+![Login](https://raw.githubusercontent.com/MaitriDA/blog-website/master/screenshot/login.PNG?token=GHSAT0AAAAAABQDKPNQYKFAEREUNKYSAIZ4YPJGZXQ)
+
