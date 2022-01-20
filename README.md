@@ -1,13 +1,11 @@
 # Blog Website
-A MERN stack blog website with clean UI to express your thoughts.
+A MERN stack blog website with clean UI to share your thoughts.
 
 
 ## Feature 
-### 1) Chatting with Friends
-The very obvious feature without which chat app will lose its essence. We can chat with our friends and contacts(from the phone’s contact list). The user can send or receive text msgs and images. Make the best of your time here with us with our beautiful UI and flawless user experience. Fast messaging on both website and app simultaneously never looked so easy! Join us to streamline all your conversations and much more coming soon.
+1) The very obvious feature without which chat app will lose its essence. We can chat with our friends and contacts(from the phone’s contact list). The user can send or receive text msgs and images. Make the best of your time here with us with our beautiful UI and flawless user experience. Fast messaging on both website and app simultaneously never looked so easy! Join us to streamline all your conversations and much more coming soon.
 
-### 2) Personal Space
-Every user gets a personal space to save/store important messages, To-Dos etc. This space will only be accessed by the authorized user. Tick off your editable ToDo list and make progress on your projects, assignments or any other tasks. Delete and edit them as you like it! Boost your productivity and organize your tasks in one place with ‘Baatein’!
+2) Every user gets a personal space to save/store important messages, To-Dos etc. This space will only be accessed by the authorized user. Tick off your editable ToDo list and make progress on your projects, assignments or any other tasks. Delete and edit them as you like it! Boost your productivity and organize your tasks in one place with ‘Baatein’!
 
 ### 3) Avatars
 Avatars for users to give the app a fresher and millenial look and feel. Users can select from a range of avatars and that will be visible to his/her contacts. It can be changed at any time.
