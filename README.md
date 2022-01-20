@@ -20,10 +20,10 @@ https://github.com/MaitriDA/blog-website
 
 ### Screen Shots
 <p align="center">
-  <span>Login Page<span>
+  #Login Page
     <img alt="Login/Signup" src="https://drive.google.com/uc?export=view&id=16YO-wj4mQqpH_TnrCVVfxmbkN2q-iJ0_" width="80%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-    <span>Register Page<span>
+    #Register Page
     <img alt="Login/Signup" src="https://drive.google.com/uc?export=view&id=1RpfEJa36SRSAXBA_HZBgVSHzBambu60o" width="80%">
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="ChatScreen" src="https://drive.google.com/uc?export=view&id=1PbKV8HxK_GeRyaI6J9cij3zjGOKM9eDS" width="80%">
